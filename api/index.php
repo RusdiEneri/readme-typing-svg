@@ -1,3 +1,4 @@
-   <?php
-   // File proxy untuk mematuhi aturan folder 'api/' dari Vercel
-   require __DIR__ . '/../src/index.php';
+<?php
+// Pindahkan direktori kerja (CWD) ke folder src agar path "../vendor" terbaca benar
+chdir(__DIR__ . '/../src');
+require 'index.php';
